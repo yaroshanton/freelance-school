@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/style-prac.css">
+<style>
+  body {}
+
+
+  input[type=text] {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 30%;
+    height: 20%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #d4d4d4;
+  }
+
+  input[type=button] {
+    width: 30%;
+    margin-top: 5px;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #28c82b;
+    border-radius: 10px;
+  }
+
+  input[type=button]:hover {
+    opacity: 0.8;
+  }
+
+  select {
+    margin-top: 20px;
+    width: 30%;
+    font-size: 20px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  tr {
+    margin-left: 20px;
+  }
+</style>
+
+<body>
+
+  <form>
+    <h1 style="text-align: center; padding-bottom: 10px;">Задание 1</h1>
+
+    <center>
+      <label>Размер 1 обьекта:</label><br>
+      <input type="text" id="R1"><br>
+
+      <label>Размер 2 обьекта:</label><br>
+      <input type="text" id="R2"><br>
+
+      <label>Вес 1 обьекта:</label><br>
+      <input type="text" id="V1"><br>
+
+      <label>Вес 2 обьекта:</label><br>
+      <input type="text" id="V2"><br>
+
+      <input type="button" value="Посчитать" onclick="ff()">
+    </center>
+  </form>
+  <script>
+
+    function ff() {
+      var v1 = document.getElementById("V1").value;
+      var v2 = document.getElementById("V2").value;
+
+      var r1 = document.getElementById("R1").value;
+      var r2 = document.getElementById("R2").value;
+
+      if (v1 / r1 > v2 / r2) {
+        alert("Обьект 1 плотнее 2");
+      } else
+        alert("Обьект 2 плотнее 1");
+    }
+  </script>
+</body>
+
+</html>

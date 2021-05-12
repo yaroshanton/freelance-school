@@ -1,0 +1,28 @@
+body {
+ font-family: "Roboto", sans-serif;
+ font-weight: 100;
+ font-size: 14px;
+ padding: 0;
+ margin: 0;
+ height: 1vh;
+ background-color: #d4d4d4;
+}
+
+*,
+*:hover,
+*:active {
+ box-sizing: border-box;
+}
+
+img {
+ display: block;
+ max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3 {
+ margin: 0;
+ padding: 0;
+}
